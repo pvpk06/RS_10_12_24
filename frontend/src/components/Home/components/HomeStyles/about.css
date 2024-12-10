@@ -1,0 +1,281 @@
+.code-ethics {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.learn-more {
+  color: #6a0dad;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.ethics-image img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  float: right;
+  margin-top: -100px;
+  border-radius: 4px;
+}
+
+.section {
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  color: #ddd;
+}
+
+.toggle-icon {
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.section-content {
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 10px;
+}
+
+
+.about .section-content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.about .section-content.open {
+  max-height: 1000px; /* Set a high enough value to fit your content */
+  opacity: 1;
+}
+
+
+.card-cover:hover {
+  transform: rotateY(180deg);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.card:hover .card-cover {
+  transform: rotateY(180deg);
+}
+
+.card:hover .card-back {
+  transform: rotateY(0deg);
+}
+
+
+.containerStyle{
+  display: 'flex';  
+  /* flex-direction: column; */
+  /* gap: '70px'; */
+ 
+}
+.cardStyle{
+  height: '400px';
+  width: '500px';
+  background-color: '#ffffff';
+  padding: '20px';
+}
+
+.abt{
+  padding: 100px 20px;
+   color: white ;
+
+
+}
+
+.abt h1{
+  font-size: 2.5em;
+  line-height: 1.2 ;
+}
+.abt h1 span{
+  font-size: 2.7em;
+  display: inline-block;
+  margin-right: 10px ;
+}
+
+.sec-img{
+  /* margin: 20px;
+  width: 97%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: none;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+
+
+
+}
+
+.ceo-img{
+  width:420px;
+  height:560px;
+  border-radius: "8px"
+}
+
+.sec-img{
+  margin: 20px;
+  align-items: center;
+  background-color: none;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sec-img img
+{
+  width: 400px;
+  height: 400px;
+}
+.ceo_abt{
+   margin-left: 40px;
+    color: #FFF; 
+    flex: 1;
+   
+}
+
+@media (max-width: 565px) {
+  .ceo{
+    width: auto;
+    height: 100px;
+
+  }
+  .containerStyle{
+    display: 'flex';  
+    flex-direction: column;
+    margin-bottom: 30px;
+    /* gap: '70px'; */
+   
+  }
+  .cardStyle{
+    height: 400px;
+    width: 500px;
+    background-color: '#ffffff';
+    padding: '20px';
+    margin: 30px;
+  }
+
+  .sec-img{
+    margin: 20px;
+    align-items: center;
+    background-color: none;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .sec-img img
+  {
+    width: 300px;
+    height: 300px;
+  }
+
+  .ceo-img{
+    width:300px;
+    height:300px;
+    border-radius: 8px;
+  }
+
+  .about_counter_conts{
+    font-size: 20px;
+    font-weight: bold
+  }
+
+  .about_counter_label{
+    font-size: 10px;
+    opacity: 0.8
+  }
+
+  .abt{
+    
+     color: white ;
+  
+
+  }
+
+  .abt h1{
+    font-size: 20px;
+    line-height: 1.2 ;
+  }
+  .abt h1 span{
+    font-size: 2em;
+    display: inline-block;
+    margin-right: 10px ;
+  }
+  .ceo_abt{
+    margin-left: 40px;
+     color: #FFF; 
+     font-size: 12px;
+     /* flex: "1" */
+ }
+
+ .ceo_abt h5{
+  font-size: 12px;
+
+ }
+ .section-title {
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  color: #ddd;
+}
+
+.toggle-icon {
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.section-content {
+  font-size: 10px;
+  color: #aaa;
+  margin-top: 8px;
+}
+  
+
+
+ 
+}
+
+@media (max-width: 768px){
+
+  .abt h1{
+    font-size: 20px;
+    line-height: 1;
+  }
+  .abt h1 span{
+    font-size: 2em;
+    display: inline-block;
+    margin-right: 8px ;
+  }
+  .ceo_abt{
+    margin-left: 40px;
+     color: #FFF; 
+     font-size: 12px;
+     /* flex: "1" */
+ }
+
+ .ceo_abt h5{
+  font-size: 15px;
+ }
+ .ceo-img{
+  width:350px;
+  height:350px;
+  border-radius: 8px;
+}
+}

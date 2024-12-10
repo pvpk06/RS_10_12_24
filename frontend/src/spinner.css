@@ -1,0 +1,57 @@
+/* Spinner.css */
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    width: 128px;
+    height: 128px;
+}
+
+/* Background ring color */
+.spinner-ring {
+    stroke: hsla(223, 90%, 20%, 0.3); /* Change color here */
+}
+
+/* Worm animation colors */
+.spinner-worm1 {
+    stroke: hsl(223, 90%, 50%); /* Main worm color */
+    animation: worm1 5s ease-in infinite;
+}
+
+.spinner-worm2 {
+    stroke: hsl(343, 90%, 50%); /* Secondary worm color */
+}
+
+.spinner-worm2-1 {
+    stroke: hsl(283, 90%, 50%); /* Tertiary worm color */
+}
+
+/* Animation for color gradient and offset */
+@keyframes worm1 {
+    from, to {
+        stroke-dashoffset: 0;
+    }
+    12.5% {
+        animation-timing-function: ease-out;
+        stroke-dashoffset: -175.91;
+    }
+    25% {
+        animation-timing-function: cubic-bezier(0, 0, 0.43, 1);
+        stroke-dashoffset: -307.88;
+    }
+    50% {
+        animation-timing-function: ease-in;
+        stroke-dashoffset: -483.8;
+    }
+    62.5% {
+        animation-timing-function: ease-out;
+        stroke-dashoffset: -307.88;
+    }
+    75% {
+        animation-timing-function: cubic-bezier(0, 0, 0.43, 1);
+        stroke-dashoffset: -175.91;
+    }
+}

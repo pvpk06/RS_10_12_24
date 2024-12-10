@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+.text-section {
+  padding: 0;
+  margin: 0 !important;
+  display: flex;
+  align-items: center;
+  
+  justify-content: center;
+  min-height: 50vh;
+  width: 100%;
+}
+
+/* Default Styles for Large Screens */
+.text-1 {
+  position: relative;
+  width: 100%;
+  color: hsl(0, 2%, 68%);
+  font-size: 2.3em;
+  font-weight: bold !important;
+  font-family: "Anonymous Pro", monospace !important;
+  letter-spacing: 7px !important;
+  overflow: hidden;
+  border-right: 2px solid hsl(0, 2%, 72%);
+  white-space: nowrap;
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms infinite;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 1000px;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: hsl(0, 0%, 80%);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+/* Media Queries */
+
+/* For screens between 1200px and 1600px (Large Desktops) */
+@media (min-width: 1200px) {
+  .text-1 {
+    font-size: 2.3em; /* Slightly larger font size for large screens */
+    letter-spacing: 8px; /* Increase letter-spacing */
+  }
+}
+
+/* For screens between 992px and 1199px (Medium Desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .text-1 {
+    font-size: 1.8em;  /* Slightly smaller font size for medium desktops */
+    letter-spacing: 6px; /* Adjust letter-spacing */
+  }
+}
+
+/* For screens between 768px and 991px (Tablets in Landscape Mode) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .text-1 {
+    font-size: 1.8em; /* Reduce font size for tablets */
+    letter-spacing: 5px; /* Adjust letter-spacing */
+    width: 80%; /* Reduce width for tablets */
+  }
+  .text-section {
+    min-height: 60vh; /* Increase the height of the section for tablets */
+  }
+}
+
+/* For screens between 576px and 767px (Phones in Landscape or Small Tablets) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .text-1 {
+    font-size: 1.6em; /* Further reduce font size for small tablets */
+    letter-spacing: 4px; /* Adjust letter-spacing */
+    width: 90%; /* Make text width responsive */
+    white-space: normal; /* Allow text to wrap to the next line */
+    word-wrap: break-word; /* Ensure text breaks onto the next line if necessary */
+    line-height: 1.4; /* Add some line height for readability */
+  }
+  .text-section {
+    min-height: 50vh; /* Adjust container height for smaller screens */
+  }
+}
+
+/* For screens smaller than 576px (Mobile Phones in Portrait Mode) */
+@media (max-width: 575px) {
+  .text-1 {
+    font-size: 1.3em; /* Smaller font size for mobile screens */
+    letter-spacing: 3px; /* Reduce letter-spacing */
+    width: 100%; /* Make the text container full width */
+    white-space: normal; /* Allow text to wrap to the next line */
+    word-wrap: break-word; /* Ensure text breaks onto the next line if necessary */
+    line-height: 1.4; /* Add line height for better readability */
+  }
+  .text-section {
+    min-height: 40vh; /* Adjust container height for mobile screens */
+    padding: 10px; /* Add some padding */
+  }
+}
